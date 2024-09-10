@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body {
+    background-color: #e4e9f7;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    border: 2px solid;
+}
+.box {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    font-size: 100;
+}
+.form-box {
+    width: 450px;
+    margin: 0 10px;
+}
+.form-box header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+.form-box .field {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+
+}
+.form-box form .input input {
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.btn {
+    height: 35px;
+    background-color: rgba(76, 68, 182, 0.808);
+    border: none;
+    border-radius: 5px;
+    color: #e4e9f7;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.btn:hover {
+    opacity: 0.82;
+}
+.submit {
+    width: 100%;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+/* <------------------home.php----------------------> */
+/* General Reset */
+/* Full viewport height */
+/* Navigation bar styling */
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+/* Logo styling */
+.logo {
+    font-size: 25px;
+    color: aliceblue;
+}
+/* Navigation links styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+    background-color: transparent;
+    border-radius: 16px;
+}
+/* Active and hover states */
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: rgb(150, 150, 176);
+    border-radius: 16px;
+    transition: all 0.5s;
+}
+/* Responsive menu button */
+#checkbtn {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+/* Hide checkbox */
+#check {
+    display: none;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 895px) {
+    #checkbtn {
+        display: block;
+    }
+
+    /* Navigation links in responsive mode */
+    nav ul {
+        width: 100%;
+        background-color: aqua;
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Toggle the menu */
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/*<------------------ contact -- page -- css ----------------------------->*/
+
+.con-header {
+    font-size: 35px;
+    margin-bottom: -20px;
+}
+.inside-con-header-p1 {
+    font-size: 13px;
+    margin-top: -20px;
+}
+.con-footer {
+    width: 100%;
+    height: 400px;
+    background-color: skyblue;
+    border-radius: 30px;
+}
+.con-footer-p {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.con-footer-p1 {
+    font-size: 15px;
+    text-align: center;
+}
+.con-footer-info-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.con-footer-info-icon p {
+    padding: 0 20px;
+}
+.con-info-lastpart {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 25px;
+    text-decoration-line: underline;
+}
+.con-info-social-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 10px;
+}
