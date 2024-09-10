@@ -1,0 +1,1 @@
+can create image_html name folder and insert into all images with same name because i all ready define the folder path that's way .
